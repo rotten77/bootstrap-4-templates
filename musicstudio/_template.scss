@@ -1,0 +1,49 @@
+h1, h2, h3 {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.navbar-light .navbar-brand {
+	color:$brand-primary;
+}
+.navbar-light .navbar-brand b {
+	color: $gray;
+	font-weight:900;
+}
+#header {
+	padding-top: ($spacer / 2);
+}
+#hp-intro {
+	background:$brand-primary;
+	background-image:url('./lightshop.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center center;
+	color:#fff;
+}
+@include media-breakpoint-down(sm) {
+	#menu-collapse {
+		clear:both;
+	}
+	.navbar-nav .nav-item {
+		clear:both;
+		float:none;
+		// display:block;
+	}
+}
+@include media-breakpoint-up(sm) {
+	.navbar-social li a {
+		display: inline-block;
+		width:40px;
+		text-align:center;
+	}
+}
+
+.navbar-social li a * {
+	color:#fff;
+}
+.navbar-social li a.facebook {background:#4c68a1;}
+.navbar-social li a.youtube {background:#cc181e;}
+.navbar-social li a.twitter {background:#55acee;}
+.navbar-social li a.instagram {background:#b76919;}
+.navbar-social li a.soundcloud {background:#ff6000;}
+.navbar-social li a.linkedin {background:#1a84bc;}
+// .navbar-light .navbar-nav .nav-link
